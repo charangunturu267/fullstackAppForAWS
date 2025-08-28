@@ -21,7 +21,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git url: 'https://github.com/srithars/fullstackapp.git', branch: 'master'
+                git url: 'https://github.com/charangunturu267/fullstackAppForAWS.git', branch: 'main'
             }
         }
 
@@ -86,8 +86,8 @@ pipeline {
 
     post {
         success {
-            echo "✅ Backend deployed: http://184.72.122.226:9090/springapp1"
-            echo "✅ Frontend deployed: http://184.72.122.226:9090/frontapp1"
+            echo "✅ Backend deployed: http://13.61.184.228:9090/springapp1"
+            echo "✅ Frontend deployed: http://13.61.184.228:9090/frontapp1"
         }
         failure {
             echo "❌ Build or deployment failed"
